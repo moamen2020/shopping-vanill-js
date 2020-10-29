@@ -1,0 +1,211 @@
+.service {
+    overflow: hidden;
+    padding: 70px 0px;
+
+
+    .service-block {
+        float: $float-left;
+        width: 30%;
+        padding-left: 15px;
+        margin: 0px 0px 60px 33px;
+        position: relative;
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        &::before {
+            content: "";
+            width: 5px;
+            height: 100%;
+            background: #010101;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        &::after {
+            content: "";
+            width: 5px;
+            height: 0;
+            border-radius: 0px;
+            background: #d33b33;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        &:hover::after {
+            height: 100%;
+        }
+    }
+}
+
+// Meida Screen
+@media #{$maxMobile} {  // max-width: 767px
+    .service {
+        overflow: hidden;
+        padding: 70px 0px;
+    
+    
+        .service-block {
+            float: $float-left;
+            width: 100%;
+            padding-left: 15px;
+            margin: 0px 0px 60px 33px;
+            position: relative;
+    
+            h2 {
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+    
+            p {
+                font-size: 15px;
+                line-height: 1.6;
+                margin-right: 10px;
+            }
+    
+            &::before {
+                content: "";
+                width: 5px;
+                height: 100%;
+                background: #010101;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+    
+            &::after {
+                content: "";
+                width: 5px;
+                height: 0;
+                border-radius: 0px;
+                background: #d33b33;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+    
+            &:hover::after {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media #{$minSmall} {  // min-width: 768px
+    .service {
+        overflow: hidden;
+        padding: 70px 0px;
+    
+    
+        .service-block {
+            float: $float-left;
+            width: 46%;
+            padding-left: 15px;
+            margin: 0px 0px 60px 15px;
+            position: relative;
+    
+            h2 {
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+    
+            p {
+                font-size: 15px;
+                line-height: 1.6;
+                margin-right: 10px;
+            }
+    
+            &::before {
+                content: "";
+                width: 5px;
+                height: 100%;
+                background: #010101;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+    
+            &::after {
+                content: "";
+                width: 5px;
+                height: 0;
+                border-radius: 0px;
+                background: #d33b33;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+    
+            &:hover::after {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media #{$minMedium} {  // min-width: 992px
+    .service {
+        overflow: hidden;
+        padding: 70px 0px;
+    
+    
+        .service-block {
+            float: $float-left;
+            width: 30%;
+            padding-left: 15px;
+            margin: 0px 0px 60px 29px;
+            position: relative;
+    
+            h2 {
+                text-transform: uppercase;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-right: 0px;
+            }
+    
+            &::before {
+                content: "";
+                width: 5px;
+                height: 100%;
+                background: #010101;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+    
+            &::after {
+                content: "";
+                width: 5px;
+                height: 0;
+                border-radius: 0px;
+                background: #d33b33;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+    
+            &:hover::after {
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+
+.information-box{
+    overflow: hidden;
+    padding: 70px 0px;
+
+    .contact-info {
+        width: 30%;
+        background: #E5EAEC;
+        padding: 20px;
+        float: $float-left;
+
+        h2 {
+            font-size: 21px;
+            margin-top: 0px;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #303030;
+
+            // select First of Paragragh
+            &:first-of-type {
+                color: #666666;
+            }
+
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: $redColor;
+                    transition: .2s ease-in-out;
+                }
+            }
+
+        }
+
+    }
+
+    .contact-form {
+        width: 65%;
+        float: $float-right;
+
+        h2 {
+            font-size: 25px;
+            margin-top: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #666666;
+            line-height: 1.8;
+        }
+
+
+        form {
+
+            input {
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 25px;
+                outline-color: $redColor;
+                font-size: 17px;
+    
+            }
+
+            textarea {
+                width: 100%;
+                height: 125px;
+                padding: 10px;
+                font-size: 17px;
+                outline-color: $redColor;
+            }
+
+            button {
+                padding: 15px 20px;
+                font-size: 15px;
+                border: 0px;
+                background: $redColor;
+                color: $whiteColor;
+                font-weight: bold;
+                margin-left: 40%;
+                margin-top: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Media Screen
+@media #{$maxMobile} {  // max-width: 767px
+    .information-box{
+        overflow: hidden;
+        padding: 70px 0px;
+    
+        .contact-info {
+            width: 100%;
+            background: #E5EAEC;
+            padding: 20px;
+            float: $float-left;
+            margin-bottom: 25px;
+    
+            h2 {
+                font-size: 21px;
+                margin-top: 0px;
+                text-transform: uppercase;
+            }
+        }
+    
+        .contact-form {
+            width: 100%;
+            float: $float-right;
+    
+            h2 {
+                font-size: 21px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media #{$minSmall} {  // min-width: 768px
+    .information-box{
+        overflow: hidden;
+        padding: 70px 0px;
+    
+        .contact-info {
+            width: 96%;
+            background: #E5EAEC;
+            padding: 20px;
+            float: $float-left;
+            margin-bottom: 25px;
+    
+            h2 {
+                font-size: 21px;
+                margin-top: 0px;
+                text-transform: uppercase;
+            }
+        }
+    
+        .contact-form {
+            width: 96%;
+            float: left;
+    
+            h2 {
+                font-size: 21px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media #{$minMedium} {  // min-width: 992px
+    .information-box{
+        overflow: hidden;
+        padding: 70px 0px;
+    
+        .contact-info {
+            width: 30%;
+            background: #E5EAEC;
+            padding: 20px;
+            float: $float-left;
+    
+            h2 {
+                font-size: 21px;
+                margin-top: 0px;
+                text-transform: uppercase;
+            }
+        }
+    
+        .contact-form {
+            width: 65%;
+            float: $float-right;
+    
+            h2 {
+                font-size: 25px;
+                margin-top: 15px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+    
+            p {
+                color: #666666;
+                line-height: 1.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+
+
+@mixin prefixer($Proparty, $Value) {
+    -webkit-#{$Proparty}: $Value;
+    -moz-#{$Proparty}: $Value;
+    -o-#{$Proparty}: $Value;
+    #{$Proparty}: $Value;
+}

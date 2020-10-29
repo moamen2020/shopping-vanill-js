@@ -1,0 +1,70 @@
+.wishlist-box-main {
+    padding: 70px 0px ;
+
+    table {
+        border-collapse: collapse;
+        thead {
+
+            tr {
+                font-size: 17px;
+                color: white;
+    
+                th {
+                    background: $redColor;
+                    padding: 18px 65px 18px 15px;
+                    text-align: left;
+
+                    &:nth-of-type(2) {
+                        padding: 15px 250px 15px 9px;
+                    }
+                }
+                
+            }
+        }
+
+        tbody {
+
+            tr {
+
+                border-bottom: 1px solid #d0d0d0;
+                .thumbnail-img {
+                    width: 100px;
+                    img {
+                        width: 75%;
+                        margin-left: 15px;
+                        margin-bottom: 7px;
+                    }
+                }
+    
+                .number-pr {
+                    font-size: 19px;
+                }
+    
+                .price-pr {
+                    font-size: 15px;
+                    padding-left: 22px;
+                }
+    
+                .quantity-box {
+                    font-size: 15px;
+                    padding-left: 22px;
+                }
+    
+                .add-pr {
+                    font-size: 15px;
+
+                    a {
+                        background: $redColor;
+                        padding: 13px 19px;
+                    }
+                }
+    
+                .remove-pr {
+                    font-size: 18px;
+                    padding-left: 22px;
+                }
+            }
+
+        }
+    }
+}
