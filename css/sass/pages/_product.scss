@@ -17,6 +17,8 @@
 
     //  Products
     .product {
+        display: flex;
+        flex-wrap: wrap;
 
         .product-single {
             width: 23%;
@@ -565,6 +567,8 @@
 
         //  Products
         .product {
+            display: flex;
+            flex-wrap: wrap;
 
             .product-single {
                 width: 21%;
