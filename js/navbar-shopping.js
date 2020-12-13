@@ -60,3 +60,11 @@ hide_Menu.addEventListener('click', function () {
 });
 
 // ========================================================
+
+// Show Navbar
+
+document.querySelector('.span-click').onclick = function () {
+
+    document.querySelector('.nav-list').style.display = 'inline-block';
+
+}
